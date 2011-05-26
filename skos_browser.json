@@ -1,0 +1,5 @@
+{
+    "title": "My SKOS Browser",
+    "store": "Memory;file:test.rdf",
+    "templates": "share/templates/"
+}

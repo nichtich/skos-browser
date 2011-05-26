@@ -1,0 +1,10 @@
+META.yml
+Makefile
+blib
+inc
+pm_to_blib
+MANIFEST
+MANIFEST.bak
+Makefile.old
+*.sw[po]
+*~

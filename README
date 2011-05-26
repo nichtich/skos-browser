@@ -1,0 +1,14 @@
+This is a draft of a Linked Data browser for SKOS vocabularies. At the moment
+it is nothing but a skeleton of an application that makes use of 'Plack' and
+'Template'.
+
+To install the application under mod_perl, add this to your server settings:
+
+    <Location /skos>
+        SetHandler perl-script
+        PerlResponseHandler Plack::Handler::Apache2
+        PerlSetVar psgi_app /path/to/skos-browser/bin/app.psgi
+        PerlSetEnv SKOS_BROWSER_CONFIG /path/to/skos_browser.json
+    </Location>
+
+You can test the application by calling rundemo.sh.

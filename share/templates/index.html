@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>$title</title>
+</head><body>
+<div id="main">
+  <h1>$title</h1>
+  [% IF size %]
+    <p>Number of triples: $size</p>
+  [% ELSE %]
+    <p>This vocabulary seems to be empty.</p>
+  [% END %]
+  <p>path: $path</p>
+</div>
+<div id="footer">
+  powered by SKOS::Browser $version
+</div>
+</body></html>
